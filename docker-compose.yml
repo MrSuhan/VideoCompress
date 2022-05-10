@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  worker:
+    build: .
+    environment:
+      API_HASH: $API_HASH
+      APP_ID: $API_ID
+      ENV: $ENV
+      SESSION_NAME: $SESSION_NAME
+      TG_BOT_TOKEN: $TG_BOT_TOKEN
+      DATABASE_URL: $DATABASE_URL
+      AUTH_USERS: $AUTH_USERS
+      BOT_USERNAME: $BOT_USERNAME
+      LOG_CHANNEL: $LOG_CHANNEL
+      UPDATES_CHANNEL: $UPDATES_CHANNEL
